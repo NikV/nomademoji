@@ -1,1 +1,174 @@
-Hello Nomads! 
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body style="text-align: center">
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<h1 style="text-align: center; margin-top: 20px; margin-bottom: 20px;">NomadEmoji</h1>
+
+<div class="frame">
+    <div class="bit-3">✈️</div>
+    <div class="bit-3">
+        🏨</div>
+    <div class="bit-3">
+        🌍</div>
+
+</div>
+
+<style>
+    *,
+    *:after,
+    *:before {
+        margin: 0;
+        padding: 0;
+        /* Removes padding behaviour on widths */
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    /* Attribute selector */
+    [class*='bit-'] {
+        float: left;
+        padding: 10px;
+    }
+
+
+
+    /* Floats last ".bit-" to the right */
+    [class*='bit-']:last-of-type {
+        padding-right: 10px;
+        float: right;
+    }
+
+    /* Clearfix */
+    .frame:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .bit-1  {width: 100%;}
+    .bit-2  {width: 50%;}
+    .bit-3  {width: 33.33%;}
+    .bit-4  {width: 25%;}
+    .bit-5  {width: 20%;}
+    .bit-6  {width: 16.6666666667%;}
+    .bit-7  {width: 14.2857142857%;}
+    .bit-8  {width: 12.5%;}
+    .bit-9  {width: 11.1111111111%;}
+    .bit-10 {width: 10%;}
+    .bit-11 {width: 9.09090909091%;}
+    .bit-12 {width: 8.33%; margin: 10px;}
+
+    /*base tablet to small desktop styles*/
+    @media (min-width: 800px) and (max-width: 1100px) {
+        .bit-2,
+        .bit-7 {
+            width: 100%;
+        }
+
+        .bit-4,
+        .bit-8,
+        .bit-10, {
+            width: 100%;
+        }
+
+        .frame h1 {
+            font-size: 20px;
+
+        }
+
+        .mini-menu {
+            margin: 10px;
+
+        }
+
+
+    }
+
+    /*base tablet styles*/
+    @media (max-width: 800px) {
+        .bit-4,
+        .bit-6,
+        .bit-8,
+        .bit-10,
+        .bit-12 {
+            width: 100%;
+        }
+
+        .bit-1,
+        .bit-2,
+        .bit-3,
+        .bit-5,
+        .bit-7,
+        .bit-9,
+        .bit-11 {
+            width: 100%;
+        }
+
+        #wth h1 {
+            color: black;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .mini-menu {
+            margin: 10px;
+
+        }
+    }
+
+    /*base mobile styles - everything 100%*/
+    @media (max-width: 480px) {
+        .bit-1,
+        .bit-2,
+        .bit-3,
+        .bit-4,
+        .bit-5,
+        .bit-6,
+        .bit-7,
+        .bit-8,
+        .bit-9,
+        .bit-10,
+        .bit-11,
+        .bit-12 {
+            width: 100%;
+        }
+</style>
+
+<script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script src="http://twemoji.maxcdn.com/2/twemoji.min.js"></script>
+<script>
+    twemoji.parse(document.body);
+</script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+</script>
+</body>
+</html>
